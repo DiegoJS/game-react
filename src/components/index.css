@@ -1,0 +1,41 @@
+body{
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+#img-ruleta{
+  position: relative;
+  z-index: 1;
+}
+.img-ruleta{
+  /*animation-name: infinite-spinning;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;*/
+  /*animation-iteration-count: infinite;*/
+  transition: all 4s ease;
+  overflow-x: hidden
+}
+
+.btn-warning.btn-orange, .btn-warning.btn-orange:focus, .btn-warning.btn-orange:hover{
+  color: #fff;
+  background-color: #ff2244;
+  border-color: #ff2244;
+  position: relative;
+  z-index: 2;
+}
+
+.ruleta-puntos{
+  color:#fff;
+  text-shadow: 1px 1px 1px #ff2244;
+  text-transform: uppercase;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    /*transform: rotate(360deg);*/
+    transform: rotate(1100deg);
+  }
+}

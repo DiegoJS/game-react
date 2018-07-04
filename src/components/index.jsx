@@ -27,6 +27,8 @@ class App extends Component {
 		this.points_data = 0;
 		this.rulets_data = 0;
 
+		this.ruleta = React.createRef()
+
 		this.animarEvent = this.animarEvent.bind(this)
 		this.showRuletaResult = this.showRuletaResult.bind(this)
 		this.shopPremio = this.shopPremio.bind(this)
@@ -63,7 +65,7 @@ class App extends Component {
 		})
 		
 		setTimeout(() => {
-			document.getElementById('img-ruleta').classList.add('img-ruleta');
+			this.ruleta.current.classList.add('img-ruleta');
 			this.setState({
 				data_ruleta: valor_premio,
 			})
@@ -73,7 +75,7 @@ class App extends Component {
 
 	showRuletaResult(){
 		
-		document.getElementById('img-ruleta').classList.remove("img-ruleta");
+		this.ruleta.current.classList.remove("img-ruleta");
 
 		if (this.points_data >= 0) {
 			
@@ -119,8 +121,7 @@ class App extends Component {
 			swal("Ups...", "No tienes puntos suficientes para comprar este item...", "warning");
 
 		}
-
-
+		
 	}
 
 	render() {
@@ -152,6 +153,7 @@ class App extends Component {
 								data_ruleta={this.state.data_ruleta}
 								showRuletaResult={this.showRuletaResult}
 								animarEvent={this.animarEvent}
+								ruleta={this.ruleta}
 							/>
 						</div>
 					</div>

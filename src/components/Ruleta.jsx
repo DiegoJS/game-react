@@ -14,6 +14,7 @@ const Ruleta = (props) => (
                 alt="Ruleta"
                 onTransitionEnd={props.showRuletaResult}
                 className="img-responsive img-ruleta"
+                ref={props.ruleta}
             />
         </p>
         <p align="center">

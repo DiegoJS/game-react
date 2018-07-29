@@ -1,1 +1,1 @@
-Este proyecto está realizado con reactjs [Juego de la ruleta](https://github.com/DiegoJS/game-react).
+Este proyecto está realizado con la librería ReactJs [Juego de la ruleta](https://diegojs.github.io/game-react/).

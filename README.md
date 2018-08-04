@@ -1,4 +1,4 @@
-Este es un proyecto personal que está implementado utilizando la librería ReactJS de facebook [Juego de la ruleta](https://diegojs.github.io/game-react/).
+Este proyecto está realizado con ReactJS [Juego de la ruleta](https://diegojs.github.io/game-react/).
 
 Install:
 

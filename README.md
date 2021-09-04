@@ -1,5 +1,7 @@
 Este es un proyecto personal que está implementado utilizando la librería ReactJS de facebook [Juego de la ruleta](https://diegojs.github.io/game-react/).
 
+<img src="public/captura.png"/>
+
 Install:
 
 1. git clone git@github.com:DiegoJS/game-react.git
